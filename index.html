@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Compra de entradas CineMaster</h1>
+    </header>
+
+    <form action="action_page.php" target="_blank" method="GET" >
+
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="primer nombre"><br>
+        <label for="apellido">Apellido</label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="primer apellido"><br>
+        <label for="telefono">Telefono</label><br>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{8}" placeholder="123-xxxx"><br>
+        <label for="fecha nacimiento">Fecha de Nacimmiento</label><br>
+        <input type="date" id="fecha nacimiento" name="fecha nacimiento"><br>
+
+        <h2>Elegir una Pelicula</h2>
+        <input type="radio" id="Señor de los anillo 1" name="pelicula1">
+        <label for="Señor de los anillo 1">El Señor de los Anillos (La comunidad del anillo)</label><br><br>
+        <input type="radio" id="Jhon Wick 4" name="pelicula2">
+        <label for="Jhon Wick 4">Jhon Wick 4</label><br><br>
+        <input type="radio" id="El Conjuro" name="pelica3">
+        <label for="El Conjuro">El Conjuro</label><br>
+
+        <h2>Eliga una Tanda</h2>
+
+        <input type="checkbox" id="horario1" name="horario1">
+        <label for="horario1">2:30pm</label>
+        <input type="checkbox" id="horario2" name="horario2">
+        <label for="horario2">3:00pm</label><br>
+
+        <input type="checkbox" id="horario3" name="horario3">
+        <label for="horario3">3:30pm</label>
+        <input type="checkbox" id="horario4" name="horario4">
+        <label for="horario4">4:00pm</label><br>
+
+        <input type="checkbox" id="horario5" name="horario5">
+        <label for="horario5">4:30pm</label>
+        <input type="checkbox" id="horario6" name="horario6">
+        <label for="horario6">5:00pm</label><br><br>
+
+        <h3>Forma de Pago</h3><br>
+        <input type="checkbox" id="efectivo" name="efectivo">
+        <label for="efectivo">Efectivo</label><br>
+        <input type="checkbox" id="visa" name="visa">
+        <label for="visa">Tarjeta Visa</label><br>
+        <input type="checkbox" id="mastercard" name="mastercard">
+        <label for="mastercard">Master Card</label><br>
+        <input type="checkbox" id="clave" name="clave">
+        <label for="clave">Clave</label><br><br>
+
+        <input type="submit" value="ENVIAR"><br><br>
+        <input type="reset" value="BORRAR">
+
+    </form>
+
+</body>
+</html>
